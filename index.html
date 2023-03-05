@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Rock Paper Scissors Game</title>
+
+
+</head>
+
+<body class="body">
+  <div class="container-fluid">
+    <br><br>
+    <div class="text-center text-light">
+      <h1 class="title1">Rock Paper Scissors</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="result2 text-center text-light">Instructions: Press on an image bellow to choose your item. The
+          computer then will generate its own option, and the winner will be stated.</h2><br><br>
+        <h2 class="result2 text-center text-light" id="result">Click to play!</h2>
+      </div>
+    </div>
+
+
+
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="rock.jpg" class="rockimage">
+        <button class="button1 justify-content-center" onclick="playGame('rock')">
+          <h3>Rock</h3>
+        </button>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="paper.jpg" class="paperimage">
+        <button class="button2 justify-content-center" onclick="playGame('paper')">
+          <h3>Paper</h3>
+        </button>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="scissors.webp" class="scissorsimage">
+        <button class="button3 justify-content-center" onclick="playGame('scissors')">
+          <h3>Scissors</h3>
+        </button>
+      </div>
+    </div>
+    <br>
+
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="player1 text-light text-center">Player:</h2>
+        <h2 class="scoreplayer text-center text-light" id="userScore">0</h2>
+      </div>
+      <div class="col-md-4">
+        <h2 class="computer1 text-light text-center">Computer:</h2>
+        <h2 class="scorecomputer text-center text-light" id="computerScore">0</h2>
+      </div>
+      <div class="col-md-4">
+        <center>
+          <h2 class="restart1 text-center text-light">*Clicking <underline class="resetbutton">reset</underline> will
+            delete the score and set both values to zero!</h2>
+          <button class="button4 justify-content-center" id="resetGame" onclick="resetGame()">
+            <h3>Reset</h3>
+          </button>
+        </center>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <br><br><br><br><br><br><br>
+  <h4 class="footer bg-white">Created by: Mustafa Soomro with help from Max Reiss</h4>
+</body>
+
+</html>
